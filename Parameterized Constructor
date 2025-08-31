@@ -1,0 +1,24 @@
+package aqer;
+public class Paraa {
+	String name;
+    Paraa(String name) {
+    	System.out.println("Hello " +name);
+    }
+	Paraa(String name, int age) {
+		System.out.println("she is " +name+", her age is " +age);
+	}
+    Paraa(String name, int age, double weight) {
+    	System.out.println("she is " +name+", her age is " +age+", her weight is " +weight);
+    }
+	public static void main(String[] args) {
+		Paraa con=new Paraa("Riya");//one parameter
+		Paraa obj=new Paraa("Riya", 32); //two parameters
+		Paraa objj=new Paraa("Riya", 32, 56.8); //three parameters
+	}
+
+}
+
+Output:-
+Hello Riya
+she is Riya, her age is 32
+she is Riya, her age is 32, her weight is 56.8
