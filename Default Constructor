@@ -1,0 +1,20 @@
+package aqer;
+
+public class De {
+	String name;
+	int age;
+	De() {
+		System.out.println("This is a Default Constructor");
+		name="Tina";
+		age=11;
+	}
+	public static void main(String[] args) {
+		De con=new De();
+		System.out.println("My name is "+con.name+" and my age is "+con.age);
+	}
+
+}
+
+Output:-
+This is a Default Constructor
+My name is Tina and my age is 11
