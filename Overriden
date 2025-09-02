@@ -1,0 +1,59 @@
+package aqer;
+class Fruit {
+    int no;
+    String colour;
+
+    public Fruit(int no, String colour) {
+        this.no = no;
+        this.colour = colour;
+    }
+
+    public void display() {
+        System.out.println("number: " + no);
+        System.out.println("colour: " + colour);
+    }
+}
+class Apple extends Fruit {
+    public Apple(int no, String colour) {
+        super(no, colour); // Call to Fruit constructor
+    }
+
+    @Override
+    public void display() {
+        System.out.println("number: " + no);
+        System.out.println("colour: " + colour);
+    }
+}
+
+class Orange extends Fruit {
+    public Orange(int no, String colour) {
+        super(no, colour); // Call to Fruit constructor
+    }
+
+    @Override
+    public void display() {
+        System.out.println("number: " + no);
+        System.out.println("colour: " + colour);
+    }
+}
+
+public class Overriden {
+    public static void main(String[] args) {
+        Fruit fr = new Fruit(7, "Multicolour");
+        Apple ap = new Apple(3, "Red");
+        Orange or = new Orange(4, "Orange");
+
+        fr.display();
+        ap.display();
+        or.display();
+    }
+}
+
+Output:-
+number: 7
+colour: Multicolour
+number: 3
+colour: Red
+number: 4
+colour: Orange
+
