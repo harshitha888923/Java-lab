@@ -1,0 +1,32 @@
+package aqer;
+class Gp{
+	Gp()
+	{
+		super();
+		System.out.println("Gp class");
+	}
+}
+class P extends Gp{
+	P()
+	{
+		super();
+		System.out.println("P class");
+	}
+}
+class C extends P{
+	C()
+	{
+		super();
+		System.out.println("C class");
+	}
+}
+public class Super {
+	public static void main(String[] args) {
+		C c1=new C();
+	}
+}
+
+Output:-
+Gp class
+P class
+C class
