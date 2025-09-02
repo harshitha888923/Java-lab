@@ -1,0 +1,36 @@
+package v1;
+class Rbi{
+	public double getRateOfInterest() {
+		return 5.0;
+	}
+}
+class Sbi extends Rbi {
+	@Override
+	public double getRateOfInterest() {
+		return 6.5;
+	}
+}
+class Icici extends Rbi {
+	@Override
+	public double getRateOfInterest() {
+		return 7.5;
+    }
+}
+public class Bank {
+	public static void main(String[] args) {
+		Rbi rb=new Rbi();
+		Sbi sb=new Sbi();
+		Icici ic=new Icici();
+		Rbi rbb=new Sbi();
+		System.out.println("RBI Rate of interest " +rb.getRateOfInterest());
+		System.out.println("SBI Rate of interest "+sb.getRateOfInterest());
+		System.out.println("ICICI Rate of interet "+ic.getRateOfInterest());
+		System.out.println("New sbi rate of interest " +rbb.getRateOfInterest());
+	}
+}
+
+Output:-
+RBI Rate of interest 5.0
+SBI Rate of interest 6.5
+ICICI Rate of interet 7.5
+New sbi rate of interest 6.5
