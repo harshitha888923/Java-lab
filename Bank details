@@ -1,0 +1,70 @@
+package oops;
+import java.util.*;
+public class bank {
+    public static void main(String[] args) {
+    	Scanner sc=new Scanner(System.in);
+    	System.out.println("name of the account holder is ");
+    	String a=sc.next();
+    	System.out.println("aadhar number is");
+    	String b=sc.next();
+    	System.out.println("PAN number is");
+    	String c=sc.next();
+    	System.out.println("account number is ");
+    	String d=sc.next();
+    	System.out.println("amount credited is ");
+    	String e=sc.next();
+    	System.out.println("account number is ");
+    	String f=sc.next();
+    	System.out.println("amount debited is ");
+    	String g=sc.next();
+    	System.out.println("enter balance amount is ");
+    	String h=sc.next();
+ 
+    	System.out.println("enter a number ");
+    	int i=sc.nextInt();
+    
+        switch(i)
+        {
+          case 1:System.out.println("name of the account holder is "+a);
+             System.out.println("aadhar number is"+b);
+             System.out.println("PAN number is"+c);
+             break;
+          case 2:System.out.println("account number is "+d);
+             System.out.println("credited amount is "+e);
+             break;
+          case 3:System.out.println("account number number is "+f);
+             System.out.println("debited amount is "+g);
+             break;
+          case 4:System.out.println("successful, balance amount is "+h);
+             break;
+          case 5:System.out.println("amount transfered from"+g+"to"+h);
+             break;
+      
+          }  
+    }
+    }
+
+Output:-
+name of the account holder is 
+harshitha
+aadhar number is
+456789976666
+PAN number is
+567876
+account number is 
+544859595876
+amount credited is 
+567800
+account number is 
+3556666688776
+amount debited is 
+34534500
+enter balance amount is 
+7889900
+enter a number 
+1
+name of the account holder is harshitha
+aadhar number is456789976666
+PAN number is567876
+
+
