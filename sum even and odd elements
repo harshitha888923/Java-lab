@@ -1,0 +1,54 @@
+package oops;
+import java.util.*;
+
+public class inte {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter number of elements:");
+        int a = sc.nextInt();
+
+        int[] arr = new int[a];
+        int s = 0; 
+        int m = 0;  
+
+        System.out.println("Enter the elements:");
+        for (int i = 0; i < a; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        System.out.println("The entered elements are:");
+        for (int i = 0; i < a; i++) {
+            System.out.println(arr[i]);
+
+            if (arr[i] % 2 == 0) {
+                s = s + arr[i];  
+            } else {
+                m = m + arr[i]; 
+            }
+        }
+
+        System.out.println("Sum of even numbers is " + s);
+        System.out.println("Sum of odd numbers is " + m);
+
+        sc.close();
+    }
+}
+
+Output:-
+Enter number of elements:
+5
+Enter the elements:
+6
+8
+9
+5
+8
+The entered elements are:
+6
+8
+9
+5
+8
+Sum of even numbers is 22
+Sum of odd numbers is 14
