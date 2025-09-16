@@ -1,0 +1,45 @@
+package oops;
+import java.util.*;
+
+public class string {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String name = sc.next();
+
+        // First count how many digits to create array
+        int count = 0;
+        for (int i = 0; i < name.length(); i++) {
+            if (Character.isDigit(name.charAt(i))) {
+                count++;
+            }
+        }
+
+        int[] digits = new int[count];
+        int index = 0;
+        // Extract digits into array
+        for (int i = 0; i < name.length(); i++) {
+            char c = name.charAt(i);
+            if (Character.isDigit(c)) {
+                digits[index++] = Character.getNumericValue(c);
+            }
+        }
+
+        // Sort array ascending first
+        Arrays.sort(digits);
+
+        // Print in descending order by iterating backward
+        System.out.print("Digits in descending order: ");
+        for (int i = digits.length - 1; i >= 0; i--) {
+            System.out.print(digits[i]);
+        }
+        System.out.println();
+
+        sc.close();
+    }
+}
+
+Output:-
+Enter a string: 9356jj
+Digits in descending order: 9653
+
